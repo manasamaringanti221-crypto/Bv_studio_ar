@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+  <a-scene embedded arjs>
+    <a-assets>
+      <video id="myVideo" src="video..mp4" loop="true" crossorigin="anonymous" playsinline webkit-playsinline></video>
+    </a-assets>
+    <a-marker preset="hiro">
+      <a-video src="#myVideo" width="4" height="2.25" rotation="-90 0 0"></a-video>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
